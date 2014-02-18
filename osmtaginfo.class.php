@@ -28,7 +28,8 @@ class OSMTagInfo {
 	static function parse( $input, $argv ) {
 		global $wgScriptPath;
 
-		wfLoadExtensionMessages( 'OSMTagInfo' );
+		//Disable in MW 1.21
+		//wfLoadExtensionMessages( 'OSMTagInfo' );
 
 		if ( isset( $argv['key'] ) ) {
 			$key = $argv['key'];
